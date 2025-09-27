@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <main>
+        <header>
+            <div class="header-styling"></div>
+            <div class="header-info">
+                <img class="img portrait" src="../assets/pepe.png" alt="Portrait Image">
+                <div class="about-me-container">
+                    <h1 class="txt heading">About Me</h1>
+                    <p class="txt about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus metus
+                        nisi, a egestas metus
+                        consectetur quis. Suspendisse egestas, ex vitae viverra consectetur, erat neque ullamcorper
+                        mauris, mattis maximus eros risus ac est. Nulla gravida lobortis sollicitudin. Aliquam imperdiet
+                        tincidunt aliquet. Duis convallis ultricies mattis. Praesent sagittis urna eros, id vehicula
+                        mauris aliquet in. Pellentesque luctus ligula ut lorem pretium, euismod ultrices erat dictum.
+                        Quisque in lacus ut metus venenatis tincidunt eget id sapien. Cras eu nibh dui. Fusce a ante vel
+                        eros mattis iaculis. Nullam ultrices efficitur ultricies. Donec faucibus sapien sit amet augue
+                        pellentesque, nec tincidunt ante facilisis. Vestibulum ut est pellentesque, semper augue vitae,
+                        interdum ex. Fusce et tristique dolor.
+
+                        Aliquam erat volutpat. Integer vehicula sem dignissim magna vestibulum, ut tincidunt lacus
+                        tincidunt. Nam ut rhoncus massa, vitae lobortis ligula. Pellentesque ac porta dolor, sed egestas
+                        turpis. Ut et euismod augue, ac vulputate mi. Etiam ullamcorper elit nec ex varius sagittis.
+                        Duis sed pellentesque orci.</p>
+                    <div class="buttons-container">
+                        <img class="link-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h1 class="txt heading">My Work</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="screenshot"></div>
+                    <div class="project-details">
+                        <div class="project-headings">
+                            <h2>Project Name</h2>
+                            <img class="link-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                        </div>
+                        <div class = "project-desc">
+                            <p>Description of project. Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="screenshot"></div>
+                    <div class="project-details">
+                        <div class="project-headings">
+                            <h2>Project Name</h2>
+                            <img class="link-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                        </div>
+                        <div class = "project-desc">
+                            <p>Description of project. Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="screenshot"></div>
+                    <div class="project-details">
+                        <div class="project-headings">
+                            <h2>Project Name</h2>
+                            <img class="link-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                        </div>
+                        <div class = "project-desc">
+                            <p>Description of project. Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="my-details">
+                <h1>Contact Me</h1>
+                <p>Please get in touch if you think our work could be mututally beneficial!</p>
+                <p>1234 Random Road<br>
+                Random Town, Hamilton</p>
+                <p>555-555-5555</p>
+                <p>myemail@email.email</p>
+            </div>
+            <!-- <img class="img landscape" src="../assets/Fish.png" alt="Image of a fish"> -->
+            <picture>
+                <source media="(width < 600px)" srcset="../assets/FishCropped.png">
+                <img class="img landscape" src="../assets/Fish.png" alt="Fighting fish">
+            </picture>
+        </div>
+    </footer>
 </body>
+
 </html>
