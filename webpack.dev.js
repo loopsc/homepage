@@ -1,11 +1,11 @@
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
-    mode: 'development',
+    mode: "development",
     devtool: "eval-source-map",
     devServer: {
         watchFiles: ["./src/app/template.html"],
-        open: true
+        open: true,
     },
-  });
+});
