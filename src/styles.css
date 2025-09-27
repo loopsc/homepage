@@ -5,8 +5,8 @@
 }
 
 :root {
-    --heading-font: "tinos";
-    --body-font: "genos";
+    --main-font: "tinos";
+    --footer-font: "genos";
     --violet: #564d80;
 }
 
@@ -28,7 +28,7 @@ main {
 .header-styling {
     background-color: var(--violet);
     transform: skewY(-7deg);
-    height: 24rem;
+    height: 30rem;
     width: 100%;
     position: absolute;
     top: 0;
@@ -75,12 +75,13 @@ header {
 }
 
 .txt.heading {
-    font-family: var(--heading-font);
+    font-family: var(--main-font);
     font-weight: 500;
 }
 
 .txt.about-me {
     font-size: 1.1rem;
+    font-family: var(--main-font);
 }
 
 .buttons-container {
@@ -93,6 +94,10 @@ header {
 section {
     /* border: 1px solid green; */
     width: 100%;
+}
+
+section > h1 {
+    padding-left: 12rem;
 }
 
 .projects-container {
@@ -131,7 +136,7 @@ section {
 h2 {
     font-size: 1.2rem;
     font-weight: 200;
-    font-family: var(--heading-font);
+    font-family: var(--main-font);
 }
 
 .project-headings {
@@ -143,6 +148,11 @@ h2 {
 
 .project-headings > .link-icon {
     width: 1.5rem;
+}
+
+.project-desc {
+    font-size: 1.1rem;
+    font-family: var(--main-font);
 }
 
 footer {
@@ -172,10 +182,13 @@ footer {
 
 .my-details > h1 {
     font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--main-font);
 }
 
 .my-details > p {
     font-size: 1.5rem;
+    font-family: var(--footer-font);
 }
 
 .img.landscape {
