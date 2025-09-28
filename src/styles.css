@@ -44,7 +44,6 @@ header {
 }
 
 .header-info {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +76,7 @@ header {
     padding: 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    width: min(100vw - 2.5rem, 800px);
+    width: min(100vw - 40px, 500px);
 }
 
 .about-me-container > h1 {
