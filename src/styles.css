@@ -18,7 +18,6 @@ main {
     display: flex;
     flex-direction: column;
     margin: 6rem;
-    gap: 6rem;
 }
 
 .link-icon {
@@ -42,36 +41,47 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-height: 500px;
-    height: 500px;
-    /* border: 1px solid red; */
 }
 
 .header-info {
-    width: 80%;
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.cover-img-container {
+    position: relative;
+    overflow: hidden;
+    width: min(100vw - 2.5rem, 650px);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .img.portrait {
-    max-width: 400px;
-    height: auto;
-    max-height: 370px;
-    object-fit: contain;
-    box-shadow: rgba(39, 41, 43, 0.5) 0px 8px 24px;
+    width: 100%;
+    display: block;
+}
+
+.my-name {
+    position: absolute;
+    font-size: 3rem;
+    text-align: left;
+    left: 20px;
+    bottom: 40px;
     z-index: 2;
+    color: white;
 }
 
 .about-me-container {
     padding: 20px;
     background-color: white;
-    max-height: 80%;
-    align-self: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: relative;
+    width: min(100vw - 2.5rem, 800px);
+}
+
+.about-me-container > h1 {
+    margin-bottom: 1.2rem;
 }
 
 .txt.heading {
@@ -80,32 +90,26 @@ header {
 }
 
 .txt.about-me {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: var(--main-font);
+    margin-bottom: 1.2rem;
 }
 
 .buttons-container {
     display: flex;
-    /* border: 1px solid red; */
     justify-content: end;
     gap: 0.2rem;
 }
 
 section {
-    /* border: 1px solid green; */
     width: 100%;
 }
 
-section > h1 {
-    padding-left: 12rem;
-}
-
 .projects-container {
-    /* border: 1px solid blue; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, clamp(300px, 30%, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
     gap: 4rem;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
 }
 
@@ -174,6 +178,7 @@ footer {
     flex-direction: column;
     gap: 2rem;
     max-width: 70%;
+    padding: 1rem;
 }
 
 .my-details > * {
@@ -196,12 +201,46 @@ footer {
     height: auto;
     object-fit: contain;
     box-shadow: rgba(39, 41, 43, 0.5) 0px 8px 24px;
+    margin: 1rem;
 }
 
 /* Mobile Breakpoint */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     html {
-        font-size: 13;
+        font-size: 10;
+    }
+
+    .header-info {
+        flex-direction: column;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .img.portrait {
+        width: 350px;
+        height: 350px;
+    }
+
+    .cover-img-container {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .header-styling {
+        height: 16rem;
+    }
+
+    .my-name {
+        font-size: 3rem;
+    }
+
+    .about-me-container {
+        margin-bottom: 5rem;
+    }
+
+    .project:hover {
+        transform: scale(1);
     }
 
     .footer-container {
@@ -209,14 +248,45 @@ footer {
     }
 
     .img.landscape {
-        max-width: 300px;
-        height: auto;
-        object-fit: contain;
-        box-shadow: rgba(39, 41, 43, 0.5) 0px 8px 24px;
+        width: 400px;
+        border-radius: 4px;
     }
 }
 
 /* Tablet Breakpoint */
-@media (max-width:1000px) {
-    
+@media (min-width: 800px) and (max-width: 1100px) {
+    .header-info {
+        display: block;
+    }
+
+    .img.portrait {
+        width: 350px;
+        height: 350px;
+    }
+
+    .my-name {
+        position: absolute;
+        font-size: 3rem;
+        text-align: left;
+        left: 15px;
+        bottom: 10px;
+        z-index: 2;
+        color: white;
+    }
+
+    .cover-img-container {
+        width: 350px;
+        height: 350px;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .about-me-container {
+        margin-top: 60px;
+        width: min(100vw - 2.5rem, 650px);
+    }
+
+    .img.landscape {
+        width: 400px;
+    }
 }
