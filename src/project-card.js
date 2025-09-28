@@ -2,7 +2,6 @@ export default function createProjectCard(imageLink, title, desc, link) {
     const ghIconLink =
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg";
 
-
     const project = document.createElement("div");
     project.classList.add("project")
 
@@ -23,12 +22,11 @@ export default function createProjectCard(imageLink, title, desc, link) {
     ghLink.href = link;
     ghLink.target = "_blank";
     ghLink.rel = "noopener noreferrer";
-
     const ghIcon = document.createElement("img");
     ghIcon.src = ghIconLink;
     ghIcon.alt = "GitHub Icon";
     ghIcon.classList.add("link-icon")
-
+    
     ghLink.appendChild(ghIcon);
 
     headingsContainer.append(projectName, ghLink);
