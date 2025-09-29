@@ -70,6 +70,7 @@ header {
     bottom: 40px;
     z-index: 2;
     color: white;
+    font-family: var(--main-font);
 }
 
 .about-me-container {
@@ -120,7 +121,7 @@ section {
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .screenshot {
@@ -207,8 +208,8 @@ footer {
     margin: 1rem;
 }
 
-.link-icon:hover{
-    transform: scale(1.05) rotate(5deg); 
+.link-icon:hover {
+    transform: scale(1.05) rotate(5deg);
 }
 
 /* Mobile Breakpoint */
@@ -296,8 +297,4 @@ footer {
     .img.landscape {
         width: 400px;
     }
-}
-
-@media (max-width: 300px) {
-
 }
