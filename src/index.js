@@ -9,7 +9,8 @@ projects.forEach((project) => {
         project.screenshot,
         project.title,
         project.description,
-        project.link
+        project.ghUrl,
+        project.siteUrl
     );
     projectContainer.append(card);
 });

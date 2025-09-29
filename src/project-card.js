@@ -1,5 +1,8 @@
-export default function createProjectCard(imageLink, title, desc, link) {
-    const ghIconLink =
+import newSiteIcon from "./assets/open-in-new.svg"
+
+export default function createProjectCard(imageLink, title, desc, ghLinkUrl, siteUrl
+) {
+    const ghIconSrc =
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg";
 
     const project = document.createElement("div");
@@ -18,18 +21,32 @@ export default function createProjectCard(imageLink, title, desc, link) {
     const projectName = document.createElement("h2");
     projectName.textContent = title;
 
+    const projectIconsContainer = document.createElement("div");
+    projectIconsContainer.classList.add("project-icons-container");
+
     const ghLink = document.createElement("a");
-    ghLink.href = link;
+    ghLink.href = ghLinkUrl;
     ghLink.target = "_blank";
     ghLink.rel = "noopener noreferrer";
     const ghIcon = document.createElement("img");
-    ghIcon.src = ghIconLink;
+    ghIcon.src = ghIconSrc;
     ghIcon.alt = "GitHub Icon";
     ghIcon.classList.add("link-icon")
-    
     ghLink.appendChild(ghIcon);
 
-    headingsContainer.append(projectName, ghLink);
+    const openInNew = document.createElement("a");
+    openInNew.href = siteUrl;
+    openInNew.target = "_blank";
+    openInNew.rel = "noopener noreferrer";
+    const openInNewIcon = document.createElement("img");
+    openInNewIcon.src = newSiteIcon;
+    openInNewIcon.alt = "Open in new tab icon";
+    openInNewIcon.classList.add("link-icon")
+    openInNew.appendChild(openInNewIcon);
+
+    projectIconsContainer.append(openInNew,ghLink)
+
+    headingsContainer.append(projectName, projectIconsContainer);
 
     const projectDescContainer = document.createElement("div");
     projectDescContainer.classList.add("project-desc");

@@ -6,19 +6,22 @@ export const projects = [
     {
         title: "Battleship",
         description: "Battleship vs computer",
-        link: "https://loopsc.github.io/battleship/",
+        ghUrl: "https://github.com/loopsc/battleship",
+        siteUrl: "https://loopsc.github.io/battleship/",
         screenshot: battleship,
     },
     {
         title: "Todo App",
         description: "A simple todo app",
-        link: "https://loopsc.github.io/todo-list/",
+        ghUrl: "https://github.com/loopsc/todo-list",
+        siteUrl: "https://loopsc.github.io/todo-list/",
         screenshot: todo,
     },
         {
         title: "Weather App",
         description: "A simple weather app. Celsius and Farenheit",
-        link: "https://loopsc.github.io/weather-app/",
+        ghUrl: "https://github.com/loopsc/weather-app",
+        siteUrl: "https://loopsc.github.io/weather-app/",
         screenshot: weather,
     },
 ];
