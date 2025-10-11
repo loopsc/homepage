@@ -51,14 +51,17 @@ header {
 }
 
 .cover-img-container {
+    flex-shrink: 0;
     position: relative;
     overflow: hidden;
-    width: min(100vw - 2.5rem, 650px);
+    /* width: min(100vw - 2.5rem, 650px); */
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .img.portrait {
     width: 100%;
+    max-width: 300px;
+    height: auto;
     display: block;
 }
 
@@ -77,7 +80,7 @@ header {
     padding: 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    width: min(100vw - 40px, 500px);
+    width: min(100vw - 40px,800px);
 }
 
 .about-me-container > h1 {
@@ -107,13 +110,15 @@ section {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+    min-width: 370px;
     gap: 4rem;
     padding: 1rem;
     justify-content: center;
 }
 
 .project {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     max-height: 500px;
@@ -206,6 +211,7 @@ footer {
     object-fit: contain;
     box-shadow: rgba(39, 41, 43, 0.5) 0px 8px 24px;
     margin: 1rem;
+    border-radius: 4px;
 }
 
 .link-icon:hover {
@@ -214,6 +220,10 @@ footer {
 
 /* Mobile Breakpoint */
 @media (max-width: 800px) {
+    main {
+        margin: 2rem;
+    }
+
     html {
         font-size: 10;
     }
@@ -230,9 +240,10 @@ footer {
     }
 
     .cover-img-container {
-        width: 350px;
+        /* width: 350px; */
         height: 350px;
         margin-bottom: 20px;
+
     }
 
     .header-styling {
@@ -263,6 +274,7 @@ footer {
 
 /* Tablet Breakpoint */
 @media (min-width: 800px) and (max-width: 1100px) {
+
     .header-info {
         display: block;
     }
@@ -283,7 +295,7 @@ footer {
     }
 
     .cover-img-container {
-        width: 350px;
+        /* width: 350px; */
         height: 350px;
         float: left;
         margin-right: 1rem;

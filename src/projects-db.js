@@ -5,14 +5,14 @@ import weather from "./assets/project-screenshots/weather.PNG"
 export const projects = [
     {
         title: "Battleship",
-        description: "Battleship vs computer",
+        description: "A simple game of Battleship against the computer.",
         ghUrl: "https://github.com/loopsc/battleship",
         siteUrl: "https://loopsc.github.io/battleship/",
         screenshot: battleship,
     },
     {
         title: "Todo App",
-        description: "A simple todo app",
+        description: "A simple todo app, making use of local storage to remember your todo's",
         ghUrl: "https://github.com/loopsc/todo-list",
         siteUrl: "https://loopsc.github.io/todo-list/",
         screenshot: todo,
